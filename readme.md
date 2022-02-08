@@ -13,7 +13,7 @@
 
 Entwine is a data organization library for massive point clouds, designed to conquer datasets of hundreds of billions of points as well as desktop-scale point clouds.  Entwine can index anything that is [PDAL](https://pdal.io)-readable, and can read/write to a variety of sources like S3 or Dropbox.  Builds are completely lossless, so no points will be discarded even for terabyte-scale datasets.
 
-Check out the client demos, showcasing Entwine output with [Potree](http://potree.entwine.io), [Plas.io](http://speck.ly), and [Cesium](http://cesium.entwine.io) clients.
+Check out the client demos, showcasing Entwine output with [Potree](http://potree.entwine.io), [Plas.io](https://github.com/verma/plasio), and [Cesium](http://cesium.entwine.io) clients.
 
 Usage
 --------------------------------------------------------------------------------
@@ -34,7 +34,7 @@ statically serve `~/entwine` with a simple HTTP server:
 docker run -it -v ~/entwine:/var/www -p 8080:8080 connormanning/http-server
 ```
 
-And view the data with [Potree](http://potree.entwine.io/data/custom.html?r=http://localhost:8080/red-rocks/ept.json) and [Plasio](http://dev.speck.ly/?s=0&r=ept://localhost:8080/red-rocks&c0s=local://color).
+And view the data with [Potree](http://potree.entwine.io/data/custom.html?r=http://localhost:8080/red-rocks/ept.json) and [Plas.io](http://dev.speck.ly/?s=0&r=ept://localhost:8080/red-rocks&c0s=local://color).
 
 To view the data in [Cesium](https://www.cesium.com/), see the [EPT Tools](https://github.com/connormanning/ept-tools) project.
 
